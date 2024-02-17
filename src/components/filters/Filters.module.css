@@ -545,6 +545,21 @@ input:focus {
     padding: 0.5rem;
   }
 
+
+}
+
+@media only screen and (max-width: 500px) {
+    .scrollSelect{
+    gap: 2rem;
+  }
+
+  .industryFilter .selectItems {
+    padding: 0;
+  }
+
+  .applyBtn{
+    margin: 1rem 0 0.5rem;
+  }
 }
 
 
