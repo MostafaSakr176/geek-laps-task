@@ -17,6 +17,8 @@
   animation-duration: 0.6s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
+
+
 }
 
 .sideMenuContent {
@@ -280,3 +282,4 @@
     100% {width: 60px;}
   }
 }
+

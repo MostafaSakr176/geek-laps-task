@@ -1,6 +1,7 @@
 .filters {
   position: relative;
-
+  animation: slidRight 1s ease;
+  animation-iteration-count: 1;
 }
 .filtersContainer{
     padding: 2rem;
@@ -506,7 +507,7 @@ input:focus {
     width: 160px;
     background-color: #53ACFF !important;
     border-radius: 6px;
-    margin: 1.5rem 0 0.5rem;
+    margin: 1.5rem 0 0;
     border: none;
     outline: 0;
 }
@@ -543,4 +544,16 @@ input:focus {
     padding: 0.5rem;
   }
 
+}
+
+
+@keyframes slidRight {
+  0%{
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

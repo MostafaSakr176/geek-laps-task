@@ -5,6 +5,8 @@
   overflow-x: auto;
   padding: 0 1rem;
   text-wrap: nowrap;
+  animation: slidUp 1s ease;
+  animation-iteration-count: 1;
 }
 
 .table::-webkit-scrollbar-track
@@ -86,3 +88,14 @@
 }
 
 
+
+@keyframes slidUp {
+  0%{
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

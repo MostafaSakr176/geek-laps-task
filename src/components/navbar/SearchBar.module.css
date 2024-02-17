@@ -4,6 +4,8 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2rem;
+  animation: slidDown 1s ease;
+  animation-iteration-count: 1;
 }
 
 .SearchBar h2 {
@@ -119,5 +121,16 @@ input:focus {
 
   .notification_searchInput {
     width: 100%;
+  }
+}
+
+@keyframes slidDown {
+  0%{
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
   }
 }
