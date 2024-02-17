@@ -9,8 +9,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  background: #181818;
-  max-height: 100vh;
+    background: #181818;
+    max-height: 100vh;
     overflow: auto;
 
 }
@@ -515,26 +515,39 @@ input:focus {
 
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
 
   .filters{
       transform: translateX(100%);
       position: absolute;
       z-index: 999;
       top: 0;
+      right: 0;
       box-shadow: none;
       animation: none;
       transition: all 0.3s;
       height: 100vh;
+      width: 0;
   }
-
+  .filters.open::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 100vh;
+    right: 100%;
+    top: 0;
+    background: transparent;
+    z-index: 999;
+  }
   .filters.open{
     transform: translateX(0);
+    width: auto;
+    left: 60px;
     box-shadow: 2px 22px 46.1px -6px rgba(255, 255, 238, 0.541);
 
   }
   .filtersContainer{
-      max-height: 100vh;
+      height: 100vh;
       overflow-y: scroll;
       padding: 0.5rem;
   }
@@ -552,15 +565,13 @@ input:focus {
 }
 
 @media only screen and (max-width: 500px) {
-  .filters.open::after{
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 100vh;
-    right: 100%;
-    top: 0;
-    background: transparent;
-    z-index: 999;
+
+
+  .filtersContainer{
+    display: none;
+  }
+  .filters.open .filtersContainer{
+    display: flex;
   }
     .scrollSelect{
     gap: 2rem;
@@ -573,10 +584,12 @@ input:focus {
   .applyBtn{
     margin: 1rem 0 0.5rem;
   }
+
+
 }
 
 
-/* @keyframes slidRight {
+@keyframes slidRight {
   0%{
     transform: translateX(100%);
     opacity: 0;
@@ -585,4 +598,4 @@ input:focus {
     transform: translateX(0);
     opacity: 1;
   }
-} */
+}

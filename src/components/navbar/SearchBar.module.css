@@ -124,7 +124,7 @@ input:focus {
   }
 }
 
-/* @keyframes slidDown {
+@keyframes slidDown {
   0%{
     transform: translateY(-100%);
     opacity: 0;
@@ -133,4 +133,4 @@ input:focus {
     transform: translateY(0);
     opacity: 1;
   }
-} */
+}

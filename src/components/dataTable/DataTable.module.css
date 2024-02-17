@@ -5,8 +5,8 @@
   overflow-x: scroll;
   padding: 0 1rem;
   text-wrap: nowrap;
-  /* animation: slidUp 1s ease;
-  animation-iteration-count: 1; */
+  animation: slidUp 1s ease;
+  animation-iteration-count: 1;
 }
 
 .table::-webkit-scrollbar-track
@@ -78,7 +78,7 @@
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
   .tableItem li {
     gap: 1rem;
   }
@@ -89,7 +89,7 @@
 
 
 
-/* @keyframes slidUp {
+@keyframes slidUp {
   0%{
     transform: translateY(100%);
     opacity: 0;
@@ -98,4 +98,4 @@
     transform: translateY(0);
     opacity: 1;
   }
-} */
+}

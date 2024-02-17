@@ -38,9 +38,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
   .main{
-    flex-direction: column;
+    display: unset;
     width: calc(100% - 60px);
     padding: 0.5rem 0;
   }
@@ -50,7 +50,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     padding: 1rem;
   }
   .filters-section{
-    width: 100%;
+    width: 0%;
   }
   
 }
