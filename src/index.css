@@ -4,17 +4,8 @@ body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-height: 100vh;
-  overflow: hidden;
 }
 
 code {
   font-family: "Poppins", sans-serif;
-}
-
-#root{
-  overflow: hidden;
-  height: 100vh !important;
-  width: 100vw !important;
-  background-color: green;
 }
