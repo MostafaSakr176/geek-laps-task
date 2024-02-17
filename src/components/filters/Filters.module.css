@@ -576,7 +576,7 @@ input:focus {
 }
 
 
-@keyframes slidRight {
+/* @keyframes slidRight {
   0%{
     transform: translateX(100%);
     opacity: 0;
@@ -585,4 +585,4 @@ input:focus {
     transform: translateX(0);
     opacity: 1;
   }
-}
+} */
