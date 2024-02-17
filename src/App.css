@@ -43,7 +43,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     flex-direction: column;
     width: calc(100% - 60px);
     padding: 0.5rem 0;
-    
   }
   .search-table-section{
     width: 100%;
@@ -51,7 +50,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   }
   .filters-section{
     width: 100%;
-    /* overflow: hidden; */
   }
   
 }
