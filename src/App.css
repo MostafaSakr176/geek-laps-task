@@ -1,38 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow: hidden;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  background-color: #202020;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+img{
+  width: 100%;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.main{
+  width: calc(100% - 100px);
+  height: 100vh;
+  display: flex;
+  padding: 1rem 0 1rem 1rem;
+  gap: 1rem;
+  margin-left: auto;
+  overflow: hidden;
+}
+.search-table-section{
+  width: 70%;
+  padding: 1rem;
+}
+.filters-section{
+  width: 30%;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 800px) {
+  .main{
+    flex-direction: column;
+    width: calc(100% - 60px);
+    padding: 0.5rem 0;
+    
   }
-  to {
-    transform: rotate(360deg);
+  .search-table-section{
+    width: 100%;
+    padding: 1rem;
   }
+  .filters-section{
+    width: 100%;
+    /* overflow: hidden; */
+  }
+  
 }

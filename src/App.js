@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import DataTable from "./components/dataTable/DataTable";
+import Filters from "./components/filters/Filters";
+import SearchBar from "./components/navbar/SearchBar";
+import SideMenu from "./components/sidemenu/SideMenu";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SideMenu />
+      <div className="main">
+        <div className="search-table-section">
+          <SearchBar />
+          <DataTable />
+        </div>
+        <div className="filters-section">
+          <Filters />
+        </div>
+      </div>
     </div>
   );
 }
