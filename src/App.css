@@ -39,13 +39,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 800px) {
-    .App{
-    width: 100vw !important;
-    height: 100vh !important;
-    overflow-y: hidden !important;
-    overflow-x: hidden !important;
-    background-color: red;
-  }
   .main{
     flex-direction: column;
     width: calc(100% - 60px);

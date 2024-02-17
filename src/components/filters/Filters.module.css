@@ -525,6 +525,7 @@ input:focus {
       box-shadow: none;
       animation: none;
       transition: all 0.3s;
+      height: 100vh;
   }
 
   .filters.open{
