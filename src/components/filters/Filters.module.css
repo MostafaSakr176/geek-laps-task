@@ -26,6 +26,7 @@
   border-radius: 6px 0 0 6px;
   border: none;
   outline: 0;
+  z-index: 1000;
   display: none;
 }
 
@@ -525,6 +526,7 @@ input:focus {
       animation: none;
       transition: all 0.3s;
   }
+
   .filters.open{
     transform: translateX(0);
     box-shadow: 2px 22px 46.1px -6px rgba(255, 255, 238, 0.541);
@@ -549,6 +551,16 @@ input:focus {
 }
 
 @media only screen and (max-width: 500px) {
+  .filters.open::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 100vh;
+    right: 100%;
+    top: 0;
+    background: transparent;
+    z-index: 999;
+  }
     .scrollSelect{
     gap: 2rem;
   }
