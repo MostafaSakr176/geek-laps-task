@@ -522,6 +522,7 @@ input:focus {
       z-index: 999;
       top: 0;
       box-shadow: none;
+      animation: none;
       transition: all 0.3s;
   }
   .filters.open{
