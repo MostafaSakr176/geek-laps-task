@@ -29,9 +29,10 @@ const tableData = [
 
 function DataTable() {
 
-  const openCollaps = (e , idx)=>{
-    $(e.target.offsetParent).parent().parent().find(".tableItemCollaps").slideUp(300);
-    $(e.target.offsetParent).parent().children("div").slideToggle(300);
+  const openCollaps = (e)=>{
+    console.log(e.target);
+    $(".tableItemCollaps").not($(e.target.offsetParent).siblings(".tableItemCollaps")).slideUp(300);
+    $(e.target.offsetParent).siblings(".tableItemCollaps").slideToggle(300);
   }
 
   return (
