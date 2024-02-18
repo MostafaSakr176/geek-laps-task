@@ -552,7 +552,7 @@ input:focus {
     transform: translateX(0);
     width: auto;
     left: 60px;
-    box-shadow: 2px 22px 46.1px -6px rgba(255, 255, 238, 0.541);
+    box-shadow: 2px 22px 46.1px 30px #000;
 
   }
   .filtersContainer{
