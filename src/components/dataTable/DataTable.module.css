@@ -1,8 +1,8 @@
 .table{
   max-height: 80vh;
   max-width: 100%;
-  overflow-y: scroll;
-  overflow-x: scroll;
+  overflow-y: auto;
+  overflow-x: auto;
   padding: 0 1rem;
   text-wrap: nowrap;
   animation: slidUp 1s ease;

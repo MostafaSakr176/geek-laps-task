@@ -53,6 +53,7 @@
   text-align: left;
   padding: 10px 20px;
   outline: none;
+  transition: all 0.3s;
 }
 
 .searchInput input::placeholder {
@@ -83,6 +84,7 @@ input:focus {
   margin-left: 1rem;
   cursor: pointer;
   position: relative;
+  animation: Ring 10s ease-in 5s infinite ;
 }
 
 .notificationBtn span {
@@ -132,5 +134,30 @@ input:focus {
   100%{
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+
+@keyframes Ring{
+  0%{
+    transform: rotateZ(0deg);
+  }
+  1.5%{
+    transform: rotateZ(10deg);
+  }
+  3%{
+    transform: rotateZ(-10deg);
+  }
+  4.5%{
+    transform: rotateZ(10deg);
+  }
+  6%{
+    transform: rotateZ(-10deg);
+  }
+  7.5%{
+    transform: rotateZ(10deg);
+  }
+  9%,100%{
+    transform: rotateZ(0deg);
   }
 }

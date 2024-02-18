@@ -3,22 +3,23 @@
   animation: slidRight 1s ease;
   animation-iteration-count: 1;
 }
-.filtersContainer{
-    padding: 2rem;
-    border-radius: 8px 0 0 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #181818;
-    max-height: 100vh;
-    overflow: auto;
+
+.filtersContainer {
+  padding: 2rem;
+  border-radius: 8px 0 0 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #181818;
+  max-height: 100vh;
+  overflow: auto;
 
 }
 
-.toggleFilters{
+.toggleFilters {
   position: absolute;
-   left: -40px;
-   top: 25%;
+  left: -40px;
+  top: 25%;
   background-color: #53ACFF;
   width: 40px;
   height: 40px;
@@ -417,7 +418,8 @@ input:focus {
   justify-content: start;
   gap: 7rem;
 }
-.scrollSelect .selectLabel{
+
+.scrollSelect .selectLabel {
   justify-content: center;
 }
 
@@ -436,7 +438,8 @@ input:focus {
   align-items: center;
   overflow: auto;
 }
-.selectContainer::before{
+
+.selectContainer::before {
   content: "";
   position: absolute;
   top: 0;
@@ -445,7 +448,8 @@ input:focus {
   box-shadow: 0px 0px 13px 4px #00000061;
 
 }
-.selectContainer::after{
+
+.selectContainer::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -454,33 +458,32 @@ input:focus {
   box-shadow: 0px 0px 13px 4px #00000061;
 
 }
-.selectContainer::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: none;
-	border-radius: 0px;
-	background-color: transparent;
+
+.selectContainer::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+  border-radius: 0px;
+  background-color: transparent;
   width: 0;
   visibility: hidden;
 }
 
-.selectContainer::-webkit-scrollbar
-{
-	width: 0px;
-	background-color: transparent;
+.selectContainer::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
 }
 
-.selectContainer::-webkit-scrollbar-thumb
-{
-	border-radius: 0;
+.selectContainer::-webkit-scrollbar-thumb {
+  border-radius: 0;
   width: 0;
-	-webkit-box-shadow: none;
-	background-color: #424242;
+  -webkit-box-shadow: none;
+  background-color: #424242;
 }
 
-.selectContainer .selectItem{
+.selectContainer .selectItem {
   position: relative;
   transition: all 0.3s;
 }
+
 .selectContainer .selectItem input {
   position: absolute;
   width: 100%;
@@ -500,45 +503,52 @@ input:focus {
   padding: 0.2rem 0.5rem;
   height: 25px;
 }
-.selectContainer .selectItem input:checked + label {
+
+.selectContainer .selectItem input:checked+label {
   background-color: #53ACFF;
   color: #fff;
 }
 
-.applyBtn{
+.applyBtn {
   font-family: Poppins;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 30px;
-    letter-spacing: 0px;
-    text-align: center;
-    color: #fff;
-    padding: 0.7rem 0;
-    width: 160px;
-    background-color: #53ACFF !important;
-    border-radius: 6px;
-    margin: 1.5rem 0 0;
-    border: none;
-    outline: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #fff;
+  padding: 0.7rem 0;
+  width: 160px;
+  background-color: #53ACFF !important;
+  border-radius: 6px;
+  margin: 1.5rem 0 0;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
+.applyBtn:hover {
+  background-color: #53acffb0 !important;
+}
 
 
 @media only screen and (max-width: 850px) {
 
-  .filters{
-      transform: translateX(100%);
-      position: absolute;
-      z-index: 999;
-      top: 0;
-      right: 0;
-      box-shadow: none;
-      animation: none;
-      transition: all 0.3s;
-      height: 100vh;
-      width: 0;
+  .filters {
+    transform: translateX(100%);
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    box-shadow: none;
+    animation: none;
+    transition: all 0.3s;
+    height: 100vh;
+    width: 0;
   }
-  .filters.open::after{
+
+  .filters.open::after {
     content: "";
     position: absolute;
     width: 60px;
@@ -548,25 +558,27 @@ input:focus {
     background: transparent;
     z-index: 999;
   }
-  .filters.open{
+
+  .filters.open {
     transform: translateX(0);
     width: auto;
     left: 60px;
     box-shadow: 2px 22px 46.1px 30px #000;
 
   }
-  .filtersContainer{
-      height: 100vh;
-      overflow-y: scroll;
-      padding: 0.5rem;
+
+  .filtersContainer {
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 0.5rem;
   }
 
 
-  .toggleFilters{
+  .toggleFilters {
     display: block;
   }
 
-  .filters .filtersStock{
+  .filters .filtersStock {
     padding: 0.5rem;
   }
 
@@ -576,13 +588,15 @@ input:focus {
 @media only screen and (max-width: 500px) {
 
 
-  .filtersContainer{
+  .filtersContainer {
     display: none;
   }
-  .filters.open .filtersContainer{
+
+  .filters.open .filtersContainer {
     display: flex;
   }
-    .scrollSelect{
+
+  .scrollSelect {
     gap: 2rem;
   }
 
@@ -590,8 +604,11 @@ input:focus {
     padding: 0;
   }
 
-  .applyBtn{
+  .applyBtn {
     margin: 1rem 0 0.5rem;
+    font-size: 14px;
+    line-height: 20px;
+    width: 120px;
   }
 
 
@@ -599,11 +616,12 @@ input:focus {
 
 
 @keyframes slidRight {
-  0%{
+  0% {
     transform: translateX(100%);
     opacity: 0;
   }
-  100%{
+
+  100% {
     transform: translateX(0);
     opacity: 1;
   }
