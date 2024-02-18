@@ -72,7 +72,7 @@ function Filters() {
       <button className={styles.toggleFilters} onClick={toggleFilterMenu}>
         <img src={filterIcon} alt="" />
       </button>
-      <div className={styles.filtersContainer} >
+      <div className={styles.filtersContainer} onMouseLeave={toggleFilterMenu}>
 
 
 
