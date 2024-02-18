@@ -7,6 +7,7 @@ import portfolioIcon from "../../assets/sidemenu/portfolio.svg";
 import tradingIcon from "../../assets/sidemenu/trading.svg";
 import trainingIcon from "../../assets/sidemenu/training.svg";
 import userImg from "../../assets/sidemenu/user.png";
+import { Link } from "react-router-dom";
 
 const menuItems = [
   { icon: alertsIcon, title: "Alerts" , status: "available"},
@@ -36,10 +37,10 @@ function SideMenu() {
         <ul className={styles.menu}>
           {menuItems.map((ele, idx) => (
             <li key={idx} className={ele.status === "comming soon"? styles.comingSoon : ""}>
-              <a href="">
+              <Link to={ele.title}>
                 <img src={ele.icon} alt="" />
                 <p>{ele.title}</p>
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
