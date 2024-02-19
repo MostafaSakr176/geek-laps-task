@@ -68,11 +68,11 @@ function Filters() {
   }
 
   return (
-    <div className={filterMenuIsOpen? styles.filters+" "+styles.open : styles.filters} onMouseLeave={toggleFilterMenu}>
+    <div className={filterMenuIsOpen? styles.filters+" "+styles.open : styles.filters} >
       <button className={styles.toggleFilters} onClick={toggleFilterMenu}>
         <img src={filterIcon} alt="" />
       </button>
-      <div className={styles.filtersContainer} >
+      <div className={styles.filtersContainer} onMouseLeave={toggleFilterMenu}>
 
 
 
