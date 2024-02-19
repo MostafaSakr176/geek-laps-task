@@ -250,6 +250,7 @@ input:focus {
   padding: 0.1rem 0.4rem;
   width: max-content;
   cursor: pointer;
+  border-radius: 5px;
   transition: all 0.3s;
 }
 
@@ -564,13 +565,14 @@ input:focus {
     width: auto;
     left: 60px;
     box-shadow: 2px 22px 46.1px 30px #0f0f0f;
-
+    overflow-y: hidden;
   }
 
   .filtersContainer {
     height: 100vh;
     overflow-y: scroll;
     padding: 0.5rem;
+    border-radius: 0;
   }
 
 
