@@ -12,8 +12,6 @@
   align-items: center;
   background: #181818;
   max-height: 100vh;
-  overflow: auto;
-
 }
 
 .toggleFilters {
@@ -567,13 +565,12 @@ input:focus {
     width: auto;
     left: 60px;
     box-shadow: 2px 22px 46.1px 30px #0f0f0f;
-    max-height: 100vh;
-    overflow: hidden;
+    height: 100vh;
   }
 
   .filtersContainer {
     height: 100vh;
-    overflow-y: scroll;
+    overflow: scroll;
     padding: 0.5rem;
     border-radius: 0;
   }
