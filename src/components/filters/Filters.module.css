@@ -565,7 +565,6 @@ input:focus {
     width: auto;
     left: 60px;
     box-shadow: 2px 22px 46.1px 30px #0f0f0f;
-    overflow-y: hidden;
   }
 
   .filtersContainer {
